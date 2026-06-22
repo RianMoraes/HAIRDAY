@@ -1,10 +1,11 @@
 const path = require("path") //sintax de import do NODE
+const htmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
     target: "web",
     mode: "development",
 
-    entry: path.resolve(__dirname,  "src", "main.js"), //resolve navegação de pastas de acordo com o OS
+    entry: path.resolve(__dirname, "src", "main.js"), //resolve navegação de pastas de acordo com o OS
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),
@@ -17,4 +18,10 @@ module.exports = {
         liveReload: true,
         open: true,
     },
+
+    plugins: [
+        new htmlWebpackPlugin({
+            template: path.resolve(__dirname, "index.html")
+        })
+    ]
 }
