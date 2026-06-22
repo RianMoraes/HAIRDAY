@@ -9,4 +9,12 @@ module.exports = {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),
     },
+
+    devServer: {
+        static: {
+            directory: path.join(__dirname, "dist"),
+        },
+        liveReload: true,
+        open: true,
+    },
 }
