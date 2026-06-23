@@ -1,14 +1,3 @@
 {
-  "schedules": [
-    {
-      "id": 1782213215536,
-      "name": "andressa",
-      "when": "2026-06-23T13:00:00.000Z"
-    },
-    {
-      "id": 1782214170880,
-      "name": "bruna de cassia",
-      "when": "2026-06-24T13:00:00.000Z"
-    }
-  ]
+  "schedules": []
 }
