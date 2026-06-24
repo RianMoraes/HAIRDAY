@@ -10,6 +10,7 @@ module.exports = {
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),
+        publicPath: "/", // 1. ALTERADO: Garante que os caminhos gerados sejam relativos à raiz do servidor    
     },
 
     devServer: {
@@ -29,7 +30,7 @@ module.exports = {
             patterns: [
                 {
                     from: path.resolve(__dirname, "src", "assets"),
-                    to: path.resolve(__dirname, "dist", "src", "assets")
+                    to: path.resolve(__dirname, "dist", "assets")
                 }
             ]
         })
